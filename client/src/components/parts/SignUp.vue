@@ -49,6 +49,10 @@ export default {
       window.localStorage.setItem('secretKey', this.secretKey)
     },
     request () {
+      if ( this.name === '' || this.name === undefined ) {
+        window.alert('Please Fill In Your Name.')
+        return
+      }
       makeRPC(
         txBody.createUser(new bson.ObjectID().toString(), this.name), // enbtityの生成
         nacl.util.encodeBase64(encoding.hex2ab(this.publicKey)), // PubKey
