@@ -5,7 +5,7 @@
         <div class="userlist">
           <div v-for="user in users" v-bind:key="user._id">
             <div class="list-content">
-              <h3 class="headline mb-0">{{ user.name }}</h3>
+              <h3 class="headline mb-0">{{ user.name }}<span class="title">（Coin: {{ user.remain_coin }}）</span></h3>
               <div class="subheading">{{ user.public_key }}</div>  
             </div>
             <v-divider></v-divider>

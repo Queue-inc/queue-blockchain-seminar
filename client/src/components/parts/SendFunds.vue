@@ -47,6 +47,7 @@ export default {
           window.alert('Something Went Wrong Please Try Again.')
           return 
         }
+        window.location.reload()
         this.response = data
       }).catch ((e) => {
         window.alert(e)
