@@ -2,8 +2,8 @@ package dao
 
 import (
 	"gopkg.in/mgo.v2/bson"
-	"queue/seraku-seminar-blockchain/infrastructure"
-	"queue/seraku-seminar-blockchain/dto"
+	"queue-blockchain-seminar/blockchain/infrastructure"
+	"queue-blockchain-seminar/blockchain/dto"
 )
 
 var user_cl = infrastructure.SetCollection(infrastructure.Users.String())

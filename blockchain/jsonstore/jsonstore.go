@@ -8,9 +8,9 @@ import (
 	"fmt"
 	"github.com/tendermint/tendermint/abci/types"
 	"golang.org/x/crypto/ed25519"
-	"queue/seraku-seminar-blockchain/dao"
-	"queue/seraku-seminar-blockchain/infrastructure"
-	"queue/seraku-seminar-blockchain/static"
+	"queue-blockchain-seminar/blockchain/dao"
+	"queue-blockchain-seminar/blockchain/infrastructure"
+	"queue-blockchain-seminar/blockchain/static"
 	"strings"
 )
 

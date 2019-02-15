@@ -3,7 +3,7 @@ package jsonstore
 import (
 	"fmt"
 	"gopkg.in/mgo.v2/bson"
-	"queue/seraku-seminar-blockchain/static"
+	"queue-blockchain-seminar/blockchain/static"
 	"strconv"
 	"strings"
 )

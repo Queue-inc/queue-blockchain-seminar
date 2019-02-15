@@ -2,8 +2,8 @@ package main
 
 import (
 	"os"
-	"queue/seraku-seminar-blockchain/api"
-	"queue/seraku-seminar-blockchain/jsonstore"
+	"queue-blockchain-seminar/blockchain/api"
+	"queue-blockchain-seminar/blockchain/jsonstore"
 
 	"github.com/tendermint/tendermint/abci/server"
 	"github.com/tendermint/tendermint/abci/types"

@@ -3,9 +3,9 @@ package jsonstore
 import (
 	"encoding/base64"
 	"gopkg.in/mgo.v2/bson"
-	"queue/seraku-seminar-blockchain/dao"
-	"queue/seraku-seminar-blockchain/dto"
-	"queue/seraku-seminar-blockchain/static"
+	"queue-blockchain-seminar/blockchain/dto"
+	"queue-blockchain-seminar/blockchain/dao"
+	"queue-blockchain-seminar/blockchain/static"
 	"strconv"
 	"strings"
 )
