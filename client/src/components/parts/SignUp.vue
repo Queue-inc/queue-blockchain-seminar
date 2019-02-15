@@ -46,7 +46,6 @@ export default {
       let keys = nacl.sign.keyPair()
       this.publicKey = encoding.toHexString(keys.publicKey).toUpperCase()
       this.secretKey = encoding.toHexString(keys.secretKey).toUpperCase()
-      window.localStorage.setItem('secretKey', this.secretKey)
     },
     request () {
       if ( this.name === '' || this.name === undefined ) {
@@ -56,14 +55,14 @@ export default {
       makeRPC(
         txBody.createUser(new bson.ObjectID().toString(), this.name), // enbtityの生成
         nacl.util.encodeBase64(encoding.hex2ab(this.publicKey)), // PubKey
-        encoding.hex2ab(localStorage.getItem('secretKey')) // SecretKey
+        encoding.hex2ab(this.secretKey) // SecretKey
       ).then((data) => {
         if (data.result.check_tx.code) {
           window.alert('Something Went Wrong Please Try Again.')
           return 
         }
         this.response = data
-        window.localStorage.setItem('name', this.name)
+        window.localStorage.setItem('secretKey', this.secretKey)
         window.location.reload()
       })
     }
