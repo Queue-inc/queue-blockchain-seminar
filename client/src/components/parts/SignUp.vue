@@ -11,11 +11,13 @@
           v-model="secretKey"
           label="Secret Key"
           required
+          readonly
         ></v-text-field>
         <v-text-field
           v-model="publicKey"
           label="Public Key"
           required
+          readonly
         ></v-text-field>
         <v-btn color="success" @click="request">Sign Up</v-btn>
       </div>
